@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="/assets/css/adminstyle.css" />
+    <link rel="stylesheet" href="assets/css/personal.css" />
+    <link rel="shortcut icon" href="/images/logo.png" />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
+        >
+          <!-- <a class="navbar-brand brand-logo mr-5" href="./homeindex.html"
+            ><img src="../../images/favicon.jpeg" class="mr-2" alt="logo"
+          /></a> -->
+          <a class="navbar-brand brand-logo-mini" href="./homeindex.html"
+            ><img src="../../images/favicon.jpeg" alt="logo"
+          /></a>
+        </div>
+        <div
+          class="navbar-menu-wrapper d-flex align-items-center justify-content-end"
+        >
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="index.html"
+                data-toggle="dropdown"
+                id="profileDropdown"
+              >
+                <img src="/images/profile.jpg" alt="profile" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid page-body-wrapper">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">
+                <i class="icon-grid menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./personal_details.html">
+                <i class="icon-grid menu-icon"></i>
+                <span class="menu-title">Personal Details</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./medical_details.html">
+                <i class="icon-grid menu-icon"></i>
+                <span class="menu-title">Medical Details</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./family_members.html">
+                <i class="icon-grid menu-icon"></i>
+                <span class="menu-title">Family Members</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="past_record.html">
+                <i class="icon-grid menu-icon"></i>
+                <span class="menu-title">Medical Record</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="col-sm grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Symptoms</h4>
+                  <p class="card-description">
+                    Check the symptoms you are currently experiencing.
+                  </p>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="chestpain"
+                              />
+                              Chest Pain
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="respiratory"
+                              />
+                              Respiratory
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="Cardiac"
+                              />
+                              Cardiac Disease
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="vascular"
+                              />
+                              Cardiovascular
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="genitour"
+                                id="optionsRadios3"
+                              />
+                              Genitourinary
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="lymphatic"
+                                id="optionsRadios2"
+                              />
+                              Lymphatic
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="neuro"
+                                id="optionsRadios3"
+                              />
+                              Neurological
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="weight"
+                                id="optionsRadios4"
+                              />
+                              Weight Loss
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="psyc"
+                                id="optionsRadios3"
+                              />
+                              Psychiatric
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="gastro"
+                                id="optionsRadios3"
+                              />
+                              Gastrointestinal
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="gain"
+                                id="optionsRadios3"
+                              />
+                              Weight Gain
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="hemto"
+                                id="optionsRadios1"
+                              />
+                              Hematological
+                            </label>
+                          </div>
+
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="muscle"
+                                id="optionsRadios3"
+                              />
+                              Muscleoskeleton
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="weakness"
+                                id="optionsRadios3"
+                              />
+                              Weakness
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+other                                id="optionsRadios1"
+                              />
+                              Other
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Diseases</h4>
+                  <p class="card-description">
+                    Check the conditions that apply to you.
+                  </p>
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="asthama"
+                              />
+                              Asthma
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="dibetes"
+                              />
+                              Diabetes
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="hyper"
+                              />
+                              Hypertension
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="cancer"
+                              />
+                              Cancer
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="disorder"
+                                id="optionsRadios2"
+                              />
+                              Psychiatric Disorder
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="BP"
+                                id="optionsRadios3"
+                              />
+                              High Blood Pressure
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="LBP"
+                                id="optionsRadios4"
+                              />
+                              Low Blood Pressure
+                            </label>
+                          </div>
+
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="other"
+                                id="optionsRadios1"
+                              />
+                              Other
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title">Medical History</h1>
+
+                  <form class="forms-sample">
+                    <div class="form-group">
+                      <label for="exampleInputName1"
+                        >List the medications you are currently taking </label
+                      ><br />
+                      <textarea name="" id="" cols="100" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail3"
+                        >List any allergies if you have</label
+                      ><br />
+                      <textarea name="" id="" cols="100" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail3"
+                        >List any kind of tobacco if you have ever used
+                        them.</label
+                      >
+                      <textarea name="" id="" cols="100" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail3"
+                        >List any kind of drugs if you have ever used
+                        them.</label
+                      >
+                      <textarea name="" id="" cols="100" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword4"
+                        >List the doctor you visit frequently</label
+                      >
+                      <textarea name="" id="" cols="100" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail3"
+                        >How often do you consume alcohol?
+                      </label>
+
+                      <div class="col-sm-9">
+                        <select class="form-control">
+                          <option>Daily</option>
+                          <option>Weekly</option>
+                          <option value="">Monthly</option>
+                          <option>Occasionally</option>
+                          <option>Never</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mr-2">
+                      Submit
+                    </button>
+                    <button class="btn btn-light">Cancel</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
